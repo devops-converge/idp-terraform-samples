@@ -7,15 +7,8 @@ terraform {
     }  
 }
 
-variable "key" {
-  description = "Harness Key"
-  type        = string
-  sensitive   = true
-
-}
-
 provider "harness" {  
     endpoint   = "https://app.harness.io/gateway"  
     account_id = "qQg-poUqSlqFl9CeAJVmzg"
-    platform_api_key    = var.key
+    platform_api_key    = <+input>
 }
