@@ -28,7 +28,7 @@ resource "harness_platform_pipeline" "pipeline" {
                       type: Run
                       name: Run_1
                       identifier: Run_1
-                      description: <+input>
+                      description: test hello
                       spec:
                         shell: Sh
                         command: echo "Hello"
