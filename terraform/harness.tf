@@ -16,6 +16,6 @@ variable "key" {
 
 provider "harness" {  
     endpoint   = "https://app.harness.io/gateway"  
-    account_id = "Your_Account_ID"
+    account_id = "qQg-poUqSlqFl9CeAJVmzg"
     platform_api_key    = var.key
 }
