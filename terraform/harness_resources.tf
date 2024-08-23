@@ -31,7 +31,7 @@ resource "harness_platform_pipeline" "pipeline" {
                       description: test hello
                       spec:
                         shell: Sh
-                        command: echo "Hello"
+                        command: aws s3api create-bucket --bucket test-victor-my-bucket --region us-east-1
             tags: {}
   EOT
 }
