@@ -1,8 +1,8 @@
 resource "harness_platform_pipeline" "pipeline" {
-  identifier = idpcreateresourcepipeline
-  orgIdentifier = default
-  projectIdentifier = testvictor
-  name = idp-create-resource-pipeline
+  identifier = "idpcreateresourcepipeline"
+  orgIdentifier = "default"
+  projectIdentifier = "testvictor"
+  name = "idp-create-resource-pipeline"
   yaml = <<-EOT
     pipeline:
       name: name
