@@ -2,6 +2,7 @@ resource "harness_platform_pipeline" "pipeline" {
   identifier = "build_and_deploy"
   org_id     = "default"
   name = "idp-create-resource-pipeline"
+  project_id = "testvictor"
   yaml = <<-EOT
     pipeline:
       name: Build and Deploy
